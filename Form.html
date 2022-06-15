@@ -7,6 +7,7 @@
     <title>Get in touch</title>
 </head>
 <body>
+    <fieldset>
     <h1>Get in touch</h1>  
     <form action="">
 <label for="name">First Name</label> <br/>
@@ -24,9 +25,12 @@
 <textarea cols="20" rows="10"></textarea>
 <br/>
 <input type="submit"/>
+    </fieldset>
     </form>
+    <form>
+        <fieldset>
     <section>
-    <h3>Before you go:</h3>
+    <legend><h3>Before you go</h3></legend>
     <p>How did you find us?</p>
     <label for="instagram">Instagram</label>
     <input type="radio" id="instagram" name="instagram" value="instagram"/>
@@ -39,15 +43,20 @@
     <br/>
     <label for="other">Other</label>
     <input type="radio" id="other" name="other" value="other"/>
+    </fieldset>
+    </form>
     </section>
-    <br/>
     <section>
-        <label for="options">Did you press submit?</label>
-        <select name="options" id="options">
+        <form>
+            <fieldset>
+        <label for="submit">Did you press submit?</label>
+        <select name="submit" id="submit">
             <option value="yes">Yes</option>
             <option value="no">No</option>
         </select>
         <input type="submit"/>
+        </fieldset>
+        </form>
     </section>
 </body>
 </html>
